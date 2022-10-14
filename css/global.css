@@ -1,5 +1,17 @@
-.btn {
+button {
   height:30px;
-  width: 100px;
-  background-color: blueviolet;
+  min-width: 100px;
+  border-radius: 5px;
+  height: 25px;
+  padding: 5px 15px;
+
+}
+
+input {
+  border-radius:5px;
+  height: 25px;
+}
+
+table tr {
+  background-color: gray;
 }
