@@ -10,110 +10,102 @@
 
   <!-- <script src="https://kit.fontawesome.com/af2fda8d91.js" crossorigin="anonymous"></script>
    -->
-  <script src="cart.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/new_product.js"></script>
+  <script src="js/general.js"></script>
 
   <title>Pedidos</title>
 </head>
 <body>
-    <h1>Todos os Pedidos</h1>
-    <button class="btn">
-      <a href="/new_product.html"> + Novo Pedido </a>
-    </button> 
-
-    <h4>Filtrat por:</h4>
-    <select name="cars" id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-    </select>
-    <select name="cars" id="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-    </select>
-
+    <aside>
+      <h1>Smach!</h1>
+    </aside>
+    <section class="main">
+      <div class="orders">
+        <h1>Todos os Pedidos</h1>
+        <button class="btn">
+          <a href="/new_product.html"> + Novo Pedido </a>
+        </button>
+        <h4>Filtrat por:</h4>
+        
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        <button>Imprimir</button>
+        <hr>
+        <table>
+         <tr>
+           <th>Código</th>
+           <th>Produto</th>
+           <th>Quantidade</th>
+           <th>Valor</th>
+         </tr>
+         <tr>
+           <td>#08</td>
+           <td>MC Feliz</td>
+           <td>01</td>
+           <td>51.00</td>
+         </tr>
+           </table>
+        
+           <p>Total do pedido: RS$ 375.00 </p>
+      </div>
+      
+      
+      
+<div class="new_order">
+    
+     #New new_product
+  
+     <h1>Novo Pedido</h1>
+  <form>
+  
+    <h4>Tipo de Consumo</h4>
+    <input type="radio" id="Delivery" name="" value="Delivery">
+    <label for="html">Delivery</label><br>
+    <input type="radio" id="house" name="" value="house">
+    <label for="house">Salão</label><br>
+    <!-- Buscar Produto -->
+    <label for="fname">Buscar produto</label><br>
+    <input type="text" id="fname" value="John"><br><br>
+    <input type="submit" value="Buscar">
+    <h4> Quantidade </h4>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" value="John"><br><br>
+    <h4>Produto</h4>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" value="John"><br><br>
+    <h4>Preço</h4>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" value="John"><br><br>
+      <button> Adicionar Produto</button>
+   </form>
+   <!-- Lista de produtos já adicionados -->
     <hr>
-    <table>
-     <tr>
-       <th>Código</th>
-       <th>Produto</th>
-       <th>Quantidade</th>
-       <th>Valor</th>
-     </tr>
-     <tr>
-       <td>#08</td>
-       <td>MC Feliz</td>
-       <td>01</td>
-       <td>51.00</td>
-     </tr>
-   </table>
-
-   <p>Total do pedido: RS$ 375.00 </p>
-
-
-
-
-
-
-
-
-
-
-   #New new_product
-
-   <h1>Novo Pedido</h1>
-
-    <form>
-       
-      <h4>Tipo de Consumo</h4>
-
-      <input type="radio" id="Delivery" name="" value="Delivery">
-      <label for="html">Delivery</label><br>
-      <input type="radio" id="house" name="" value="house">
-      <label for="house">Salão</label><br>
-
-      <!-- Buscar Produto -->
-
-      <label for="fname">Buscar produto</label><br>
-      <input type="text" id="fname" value="John"><br><br>
-      <input type="submit" value="Buscar">
-
-      <h4> Quantidade </h4>
-
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" value="John"><br><br>
-
-      <h4>Produto</h4>
-
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" value="John"><br><br>
-
-      <h4>Preço</h4>
-
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" value="John"><br><br>
-
-        <button> Adicionar Produto</button>
-     </form> 
-
-
-     <!-- Lista de produtos já adicionados -->
-      <hr>
-     <table>
-      <tr>
-        <th>Código</th>
-        <th>Produto</th>
-        <th>Quantidade</th>
-        <th>Valor</th>
-      </tr>
-      <tr>
-        <td>#08</td>
-        <td>MC Feliz</td>
-        <td>01</td>
-        <td>51.00</td>
-      </tr>
-    </table>
+   <table>
+    <tr>
+      <th>Código</th>
+      <th>Produto</th>
+      <th>Quantidade</th>
+      <th>Valor</th>
+    </tr>
+    <tr>
+      <td>#08</td>
+      <td>MC Feliz</td>
+      <td>01</td>
+      <td>51.00</td>
+    </tr>
+  </table>
+</div>
+    </section>
   </body>
 </html>

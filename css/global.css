@@ -1,3 +1,15 @@
+body {
+  display: flex;
+}
+
+aside {
+  width: 20vw;
+}
+
+section {
+  width: 100%;
+}
+
 button {
   height:30px;
   min-width: 100px;
@@ -7,6 +19,11 @@ button {
 
 }
 
+
+table {
+  width: 100%;
+}
+
 input {
   border-radius:5px;
   height: 25px;
@@ -14,4 +31,18 @@ input {
 
 table tr {
   background-color: gray;
+}
+
+.orders {
+  background-color: rgb(233, 213, 252);
+  padding: 50px;
+  height: 100vh;
+  
+}
+
+.new_order {
+  background-color: rgb(197, 245, 245);
+  padding: 50px;
+  display: none;
+  height: 100vh;
 }
