@@ -24,6 +24,10 @@ table {
   width: 100%;
 }
 
+#nothing_to_see {
+  text-align: center;  
+}
+
 input {
   border-radius:5px;
   height: 25px;
@@ -36,8 +40,7 @@ table tr {
 .orders {
   background-color: rgb(233, 213, 252);
   padding: 50px;
-  height: 100vh;
-  
+  height: 100vh;  
 }
 
 .new_order {
