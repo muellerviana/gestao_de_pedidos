@@ -1,0 +1,3 @@
+function showNewProduct() {
+  alert("olá")
+}
