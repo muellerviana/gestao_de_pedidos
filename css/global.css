@@ -25,7 +25,7 @@ table {
 }
 
 #nothing_to_see {
-  text-align: center;  
+  margin: auto; 
 }
 
 input {
@@ -46,6 +46,5 @@ table tr {
 .new_order {
   background-color: rgb(197, 245, 245);
   padding: 50px;
-  display: none;
   height: 100vh;
 }

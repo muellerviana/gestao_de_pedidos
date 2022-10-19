@@ -1,3 +1,0 @@
-function showNewProduct() {
-  alert("olá")
-}
