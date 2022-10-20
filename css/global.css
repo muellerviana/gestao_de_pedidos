@@ -1,5 +1,6 @@
 body {
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 aside {
@@ -8,6 +9,11 @@ aside {
 
 section {
   width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 600;
 }
 
 button {
@@ -38,13 +44,13 @@ table tr {
 }
 
 .orders {
-  background-color: rgb(233, 213, 252);
+  background-color: rgb(234, 229, 238);
   padding: 50px;
   height: 100vh;  
 }
 
 .new_order {
-  background-color: rgb(197, 245, 245);
+  background-color: rgb(235, 235, 235);
   padding: 50px;
   height: 100vh;
 }

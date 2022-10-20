@@ -8,8 +8,6 @@ function showNewProduct(){
 
 let price = document.getElementById("price")
 
-
-
 function addProduct(){
   alert(price)
 }
