@@ -6,7 +6,9 @@ function showNewProduct(){
   hideAllProducts.setAttribute('hidden','true');
 }
 
-let price = document.getElementById("price").value
+let price = document.getElementById("price")
+
+
 
 function addProduct(){
   alert(price)
