@@ -4,21 +4,29 @@ body {
 }
 
 aside {
-  width: 20vw;
+  width: 17vw;
   padding: 20px;
 }
+
 
 .seller {
   position: fixed;
   bottom: 10vh;
 }
 
-section {
+.upper { display: flex;}
+.main {
   width: 100%;
 }
 
 h1 {
   font-size: 2em;
+  font-weight: 600;
+  margin: 5px;
+}
+
+label {
+  font-size: 1.2em;
   font-weight: 600;
   margin: 5px;
 }
@@ -50,14 +58,38 @@ table tr {
   background-color: gray;
 }
 
+
 .orders {
   background-color: rgb(234, 229, 238);
   padding: 50px;
   height: 100vh;  
 }
 
+.product_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_info input {
+  width: 500px;
+}
+
+.product_info div {
+  margin: 5px;
+  width: 100;
+}
+
+
+
 .new_order {
   background-color: rgb(235, 235, 235);
   padding: 50px;
   height: 100vh;
+}
+
+
+.flx{display: flex;}
+
+footer {
+  width: 100vw;
 }

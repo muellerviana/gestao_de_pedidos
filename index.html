@@ -15,112 +15,125 @@
   <title>Smach Admin</title>
 </head>
 <body>
-    <aside>
-      <h1>Smach!</h1>
+  <aside>
+    <h1>Smach!</h1>
 
-      <div class="seller">
-        <p>Operador: Müller</p>
-        <p>Data - Hora: <span> order.date</span></p>
-        <p>Versão: 1.0</p>
+    <div class="seller">
+      <p>Operador: Müller</p>
+      <p>Data - Hora: <span> order.date</span></p>
+      <p>Versão: 1.0</p>
+    </div>
+  </aside>
+
+  <section  class="main">
+    <div id="allProducts" class="orders">
+      <h1>Todos os Pedidos</h1>
+      <button type="button" onclick="showNewProduct()">
+          + Novo Pedido
+      </button>
+      <h4>Filtrat por:</h4>
+      
+      <select name="Tipo" id="Status">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <button>Imprimir</button>
+      <hr>
+    
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Valor</th>
+        </tr>
+        <!-- <tr>
+          <td>#08</td>
+          <td>MC Feliz</td>
+          <td>01</td>
+          <td>51.00</td>
+        </tr> -->
+          </table>
+
+          <div id="nothing_to_see">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">  
+            </script>
+            
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_awucen2m.json"  background="transparent"  speed="1"  style="width: 400px; height: 300px;"  loop autoplay></lottie-player>
+
+          </div>
+      
+          <p>Total do pedido: RS$ 375.00 </p>
+    </div>
+    
+    
+    
+    <div id="newProduct" class="new_order">  <!-- colocar hidden aqui -->
+        <h1>Novo Pedido</h1>
+    <form>
+      <h4>Tipo de Consumo</h4>
+        <input type="radio" id="Delivery" name="" value="Delivery">
+        <label for="html">Delivery</label><br>
+        <input type="radio" id="house" name="" value="house">
+        <label for="house">Salão</label><br>
+      <!-- Buscar Produto -->
+      
+     
+      <div class="search_product">
+        <div class="search_product">
+          <label for="fname">Buscar Produto</label><br>
+          <input type="text" class="form-control" id="product-name" placeholder="Código do Produto">
+          <button type="submit">Buscar</button>
       </div>
-    </aside>
-    <section  class="main">
-      <div id="allProducts" class="orders">
-        <h1>Todos os Pedidos</h1>
-        <button type="button" onclick="showNewProduct()">
-           + Novo Pedido
-        </button>
-        <h4>Filtrat por:</h4>
-        
-        <select name="Tipo" id="Status">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
-        <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
-        <button>Imprimir</button>
-        <hr>
-      
-        <table>
-         <tr>
-           <th>Código</th>
-           <th>Produto</th>
-           <th>Quantidade</th>
-           <th>Valor</th>
-         </tr>
-         <!-- <tr>
-           <td>#08</td>
-           <td>MC Feliz</td>
-           <td>01</td>
-           <td>51.00</td>
-         </tr> -->
-           </table>
-
-           <div id="nothing_to_see">
-              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">  
-              </script>
-              
-              <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_awucen2m.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
-
-           </div>
-        
-           <p>Total do pedido: RS$ 375.00 </p>
+     
+      <div class="product_info">
+        <div class="search_product">
+            <label for="fname">Quantidade</label><br>
+            <input type="text" class="form-control" id="product-name" placeholder="Código do Produto">
+        </div>
+        <div class="search_product">
+          <label for="fname">Produto</label><br>
+          <input type="text" class="form-control" id="product-name" placeholder="Código do Produto">
+            </div>
+            <div class="search_product">
+        <label for="fname">Preço</label><br>
+        <input type="text" class="form-control" id="product-name" placeholder="Código do Produto">
+            </div>
       </div>
-      
-      
-      
-  <div id="newProduct" class="new_order" hidden >
-  
-     <h1>Novo Pedido</h1>
-  <form>
-  
-    <h4>Tipo de Consumo</h4>
-      <input type="radio" id="Delivery" name="" value="Delivery">
-      <label for="html">Delivery</label><br>
-      <input type="radio" id="house" name="" value="house">
-      <label for="house">Salão</label><br>
-    <!-- Buscar Produto -->
-    <label for="fname">Buscar produto</label><br>
-    <input type="text" id="fname" value="John"><br><br>
-    <input type="submit" value="Buscar">
 
 
-    <h4 id="quantity"> Quantidade </h4>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" value="John"><br><br>
-    <h4 id="product">Produto</h4>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" value="John"><br><br>
-    <h4 id="price">Preço</h4>
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" value="John"><br><br>
-      <button onclick="addProduct()"> Adicionar Produto</button>
-   </form>
-   <!-- Lista de produtos já adicionados -->
-    <hr>
-   <table>
-    <tr>
-      <th>Código</th>
-      <th>Produto</th>
-      <th>Quantidade</th>
-      <th>Valor</th>
-    </tr>
-    <tr>
-      <td>#08</td>
-      <td>MC Feliz</td>
-      <td>01</td>
-      <td>51.00</td>
-    </tr>
-  </table>
-</div>
-    </section>
+    </form>
+      <!-- Lista de produtos já adicionados -->
+      <hr>
+      <table>
+      <tr>
+        <th>Código</th>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+      </tr>
+      <tr>
+        <td>#08</td>
+        <td>MC Feliz</td>
+        <td>01</td>
+        <td>51.00</td>
+      </tr>
+      </table>
+    </div>
+  </section>
 
-    <script src="js/general.js"></script>
-  </body>
+  <!-- <footer>
+      <p>Copyright &copy; 2022 Nome da Equipe -Todos os direitos reservados  </p>
+  </footer> -->
+
+  <script src="js/general.js"></script>
+</body>
 </html>
