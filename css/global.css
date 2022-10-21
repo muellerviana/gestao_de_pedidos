@@ -5,6 +5,12 @@ body {
 
 aside {
   width: 20vw;
+  padding: 20px;
+}
+
+.seller {
+  position: fixed;
+  bottom: 10vh;
 }
 
 section {
@@ -14,6 +20,7 @@ section {
 h1 {
   font-size: 2em;
   font-weight: 600;
+  margin: 5px;
 }
 
 button {
